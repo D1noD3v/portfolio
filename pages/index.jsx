@@ -1,18 +1,11 @@
 import { useState } from 'react';
 import React from 'react';
+import logo from '/home/dinodev/portfolio/public/terminal.png';
 
-
-
-export default function MyApp() {
-    const [count, setCount] = useState(0);
-
-    function handleClick() {
-        setCount(count + 1);
-    }
-
-    function Header() {
-        <header className="header">
-        <img src="logo.png" alt="Company Logo" className="logo" />
+function Header() {
+    return (
+    <header className="header">
+        <img src={logo} alt="Terminal logo" className="logo" />
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -22,6 +15,15 @@ export default function MyApp() {
             </ul>
         </nav>
     </header>
+    )
+    }
+    
+
+export default function MyApp() {
+    const [count, setCount] = useState(0)
+
+    function handleClick() {
+        setCount(count + 1)
     }
 
     return (
