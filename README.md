@@ -17,7 +17,10 @@ pnpm dev
 # or
 bun dev
 ```
-This is depending on what your Javascript runtime is, This project uses Node.js so in this case we use ´npm run dev´
+This is depending on what your Javascript runtime is, This project uses Node.js so in this case we use 
+```bash
+npm run dev
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
