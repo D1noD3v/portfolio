@@ -1,22 +1,46 @@
 import { useState } from 'react';
+import React from 'react';
 
-function MyButton() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
-    return (
-      <button onClick={handleClick}>You clicked {count} times.</button>
-    );
-  }
 
 
 export default function MyApp() {
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count + 1);
+    }
+
+    function Header() {
+        <header className="header">
+        <img src="logo.png" alt="Company Logo" className="logo" />
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    }
+
     return (
       <div>
-        <h1>Welcome to my app</h1>
-        <MyButton />
+        <Header/>
+        <MyButton count={count} onClick={handleClick}/> <br />
+        <MyButton count={count} onClick={handleClick}/>
       </div>
     );
   }
+
+
+
+    function MyButton({ count, onClick }) {
+        return (
+        <button onClick={onClick}>
+            Clicked {count} times
+      </button>
+    );
+
+}
+
