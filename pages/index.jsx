@@ -1,22 +1,48 @@
 import { useState } from 'react';
+import React from 'react';
+import logo from '/home/dinodev/portfolio/public/terminal.png';
+import Image from 'next/image';
+import Link from 'next/link';
 
-function MyButton() {
-  const [count, setCount] = useState(0);
 
-  function handleClick() {
-    setCount(count + 1);
-  }
+function Header() {
     return (
-      <button onClick={handleClick}>You clicked {count} times.</button>
+    <header className="header">
+        <Image src={logo} alt="Terminal logo" className="logo" />
+        <nav>
+            <ul>
+                <Link href={"/"}>Home</Link>
+            </ul>
+        </nav>
+    </header>
     );
-  }
-
+}
+    
 
 export default function MyApp() {
+    const [count, setCount] = useState(0)
+
+    function handleClick() {
+        setCount(count + 1)
+    }
+
     return (
       <div>
-        <h1>Welcome to my app</h1>
-        <MyButton />
+        <Header/>
+        <MyButton count={count} onClick={handleClick}/> <br />
+        <MyButton count={count} onClick={handleClick}/>
       </div>
     );
   }
+
+
+
+    function MyButton({ count, onClick }) {
+        return (
+        <button onClick={onClick}>
+            Clicked {count} times
+      </button>
+    );
+
+}
+
