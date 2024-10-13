@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import React from 'react';
-import logo from '/home/dinodev/portfolio/public/terminal.png';
+import logo from '@/public/terminal.png';
 import Image from 'next/image';
 import Link from 'next/link';
+
+
 
 
 function Header() {
