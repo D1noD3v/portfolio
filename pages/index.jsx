@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import React from 'react';
 import logo from '/home/dinodev/portfolio/public/terminal.png';
+import Image from 'next/image';
+
 
 function Header() {
     return (
     <header className="header">
-        <img src={logo} alt="Terminal logo" className="logo" />
+        <Image src={logo} alt="Terminal logo" className="logo" />
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -15,8 +17,8 @@ function Header() {
             </ul>
         </nav>
     </header>
-    )
-    }
+    );
+}
     
 
 export default function MyApp() {
