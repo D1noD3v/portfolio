@@ -2,14 +2,14 @@ import { useState } from 'react';
 import React from 'react';
 import logo from '@/public/terminal.png';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 
 // * Header för toppen av websidan
 function Header() {
     return (
-    <header className="header ">
+      // TODO: Fixa så texten är i center och inte längst ner inom headern.
+    <header className="header">
         <Image src={logo} alt="Terminal logo" className="logo" width={48} height={48}/>
         <div className='name-container'>
           <span>Dino Brankovic</span>
