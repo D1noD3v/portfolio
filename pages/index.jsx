@@ -6,21 +6,26 @@ import Link from 'next/link';
 
 
 
-
+// * Header för toppen av websidan
 function Header() {
     return (
-    <header className="header">
-        <Image src={logo} alt="Terminal logo" className="logo" />
-        <nav>
-            <ul>
-                <Link href={"/"}>Home</Link>
-            </ul>
-        </nav>
+    <header className="header ">
+        <Image src={logo} alt="Terminal logo" className="logo" width={48} height={48}/>
+        <div className='name-container'>
+          <span>Dino Brankovic</span>
+        </div>
+        <div style={{
+          background: 'white',
+          height: 3,
+        }}></div>
     </header>
     );
 }
-    
 
+
+
+    
+// * main funktionen för websidan
 export default function MyApp() {
     const [count, setCount] = useState(0)
 
