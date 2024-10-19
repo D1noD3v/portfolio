@@ -24,10 +24,9 @@ function Header() {
 
 function WordPart() {
   return (
-    <div class="wordpart">
-      <span className='size-24'>Hello!</span>
-      <br />
-      <br />
+    <div className="wordpart">
+      <span className='size-24 bg-clip-padding'>Hello!</span>
+
       <p>My name as seen above is Dino Brankovic and this is my portfolio site!</p>
     </div>
   );
