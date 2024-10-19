@@ -22,6 +22,16 @@ function Header() {
     );
 }
 
+function WordPart() {
+  return (
+    <div>
+      <span className='size-24'>Hello!</span>
+      <br />
+      <p>My name as seen above is Dino Brankovic and this is my portfolio site!</p>
+    </div>
+  );
+}
+
 
 
     
@@ -36,6 +46,8 @@ export default function MyApp() {
     return (
       <div>
         <Header/>
+        <br />
+        <WordPart/>  
         <MyButton count={count} onClick={handleClick}/> <br />
         <MyButton count={count} onClick={handleClick}/>
       </div>
