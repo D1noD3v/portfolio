@@ -24,8 +24,9 @@ function Header() {
 
 function WordPart() {
   return (
-    <div>
+    <div class="wordpart">
       <span className='size-24'>Hello!</span>
+      <br />
       <br />
       <p>My name as seen above is Dino Brankovic and this is my portfolio site!</p>
     </div>
@@ -48,20 +49,9 @@ export default function MyApp() {
         <Header/>
         <br />
         <WordPart/>  
-        <MyButton count={count} onClick={handleClick}/> <br />
-        <MyButton count={count} onClick={handleClick}/>
       </div>
     );
-  }
-
-
-
-    function MyButton({ count, onClick }) {
-        return (
-        <button onClick={onClick}>
-            Clicked {count} times
-      </button>
-    );
-
 }
+
+
 
