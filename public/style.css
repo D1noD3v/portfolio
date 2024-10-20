@@ -24,3 +24,8 @@ body {
     align-items: center;
     display: block;
 }
+
+.name {
+    width: 6rem;
+    height: 6rem;
+}
