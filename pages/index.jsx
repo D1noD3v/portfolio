@@ -10,8 +10,8 @@ function Header() {
     return (
       // TODO: Fixa så texten är i center och inte längst ner inom headern.
     <header className="header">
-        <Image src={logo} alt="Terminal logo" className="logo" width={48} height={48}/>
-        <div className='name-container'>
+      <div className='name-container  *:inline'>
+        <Image src={logo} alt="Terminal logo" className="logo align-left left-0 top-0" width={48} height={48}/>
           <span>Dino Brankovic</span>
         </div>
         <div style={{
