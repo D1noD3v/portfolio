@@ -2,16 +2,16 @@ import { useState } from 'react';
 import React from 'react';
 import logo from '@/public/terminal.png';
 import Image from 'next/image';
-import Link from 'next/link';
 
 
 
 // * Header för toppen av websidan
 function Header() {
     return (
-    <header className="header ">
-        <Image src={logo} alt="Terminal logo" className="logo" width={48} height={48}/>
-        <div className='name-container'>
+      // TODO: Fixa så texten är i center och inte längst ner inom headern.
+    <header className="header">
+      <div className='name-container *:inline'>
+        <Image src={logo} alt="Terminal logo" className="logo align-left left-0 top-0" width={48} height={48}/>
           <span>Dino Brankovic</span>
         </div>
         <div style={{
@@ -22,34 +22,28 @@ function Header() {
     );
 }
 
+function About() {
+  return (
+    <>
+      <span className='text-2xl'>Hello!</span>
+      <p className=''>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page</p>
+    </>
+  );
+}
+
 
 
     
 // * main funktionen för websidan
 export default function MyApp() {
-    const [count, setCount] = useState(0)
-
-    function handleClick() {
-        setCount(count + 1)
-    }
-
     return (
       <div>
         <Header/>
-        <MyButton count={count} onClick={handleClick}/> <br />
-        <MyButton count={count} onClick={handleClick}/>
+        <br />
+        <About/>  
       </div>
     );
-  }
-
-
-
-    function MyButton({ count, onClick }) {
-        return (
-        <button onClick={onClick}>
-            Clicked {count} times
-      </button>
-    );
-
 }
+
+
 

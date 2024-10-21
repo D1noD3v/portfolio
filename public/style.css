@@ -11,7 +11,7 @@ body {
     padding: 15px;
 }
 
-.header { 
+.header {
     padding: 0 20px;  
     color: white;   
     justify-content: space-between; 
@@ -21,4 +21,10 @@ body {
 .name-container {
     flex: 1;
     text-align: center;
+    align-items: center;
+    display: block;
+}
+
+.logo {
+    left: 0;
 }
