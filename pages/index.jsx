@@ -10,7 +10,7 @@ function Header() {
     return (
       // TODO: Fixa så texten är i center och inte längst ner inom headern.
     <header className="header">
-      <div className='name-container  *:inline'>
+      <div className='name-container *:inline'>
         <Image src={logo} alt="Terminal logo" className="logo align-left left-0 top-0" width={48} height={48}/>
           <span>Dino Brankovic</span>
         </div>
@@ -22,13 +22,12 @@ function Header() {
     );
 }
 
-function WordPart() {
+function About() {
   return (
-    <div className="wordpart">
-      <span className='name'>Hello!</span>
-
-      <p>My name as seen above is Dino Brankovic and this is my portfolio site!</p>
-    </div>
+    <>
+      <span className='text-2xl'>Hello!</span>
+      <p className=''>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page</p>
+    </>
   );
 }
 
@@ -37,17 +36,11 @@ function WordPart() {
     
 // * main funktionen för websidan
 export default function MyApp() {
-    const [count, setCount] = useState(0)
-
-    function handleClick() {
-        setCount(count + 1)
-    }
-
     return (
       <div>
         <Header/>
         <br />
-        <WordPart/>  
+        <About/>  
       </div>
     );
 }
