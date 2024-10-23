@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import React from 'react';
 import logo from '@/public/terminal.png';
 import Image from 'next/image';
@@ -32,8 +31,6 @@ function About() {
 }
 
 
-
-    
 // * main funktionen för websidan
 export default function MyApp() {
     return (
