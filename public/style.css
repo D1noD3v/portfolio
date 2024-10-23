@@ -1,14 +1,7 @@
 @tailwind base;
 @tailwind components;
-/*@layer base {
-    @font-face {
-        font-family: 'Krona One';
-        font-weight: 400;
-        src: url(/public/fonts/KronaOne-Regular.ttf) format('ttf');
-    }
-}
-*/
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 
