@@ -3,7 +3,6 @@ import logo from '@/public/terminal.png';
 import Image from 'next/image';
 
 
-
 // * Header för toppen av websidan
 function Header() {
     return (
