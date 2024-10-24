@@ -24,7 +24,9 @@ function About() {
   return (
     <>
       <span className='text-2xl'>Hello!</span>
-      <p className=''>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page</p>
+      <p className='about'>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page to <br />
+      show my projects and to share my skills to potential Employers.
+      </p>
     </>
   );
 }
