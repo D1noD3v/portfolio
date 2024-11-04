@@ -32,6 +32,8 @@ function About() {
 }
 
 
+
+
 // * main funktionen för websidan
 export default function MyApp() {
     return (
@@ -39,7 +41,7 @@ export default function MyApp() {
         <title>Dino Norén</title>
         <Header/>
         <br />
-        <About/>  
+        <About/>
       </div>
     );
 }
