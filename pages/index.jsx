@@ -23,7 +23,7 @@ function Header() {
 function About() {
   return (
     <>
-      <span className='text-2xl'>Hello!</span>
+      <span className='text-2xl' >Hello!</span>
       <p className='about'>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page to <br />
       show my projects and to share my skills to potential Employers.
       </p>
@@ -36,6 +36,7 @@ function About() {
 export default function MyApp() {
     return (
       <div>
+        <title>Dino Norén</title>
         <Header/>
         <br />
         <About/>  
