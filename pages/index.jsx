@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '@/public/terminal.png';
+import terminal from '@/public/terminal.png';
 import Image from 'next/image';
+
 
 
 // * Header för toppen av websidan
@@ -9,7 +10,7 @@ function Header() {
       // TODO: Fixa så texten är i center och inte längst ner inom headern.
     <header className="header">
       <div className='name-container *:inline'>
-        <Image src={logo} alt="Terminal logo" className="logo align-left left-0 top-0" width={48} height={48}/>
+        <Image src={terminal} alt="Terminal logo" className="logo align-left left-0 top-0" width={48} height={48}/>
           <span>Dino Brankovic</span>
         </div>
         <div style={{
@@ -31,7 +32,16 @@ function About() {
   );
 }
 
-
+function GithubAbout(){
+  return (
+    <>
+      <div className='githubtitle'>
+        <Image/>
+      </div>
+    
+    </>
+  )
+}
 
 
 // * main funktionen för websidan

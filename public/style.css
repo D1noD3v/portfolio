@@ -43,10 +43,10 @@ body {
 }
 
 .about {
+    margin-top: 20px;
+    margin-left: 10px;
     font-family: var(--font-DIN-Medium);
     font-size: 20px;
 }
 
-#hellospan {
-    margin: 10px;
-}
+
