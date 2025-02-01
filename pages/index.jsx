@@ -45,13 +45,14 @@ function GithubAbout(){
   return (
     <>
       <div className='githubtitle'>
-        <a href="https://github.com/D1noD3v"><FontAwesomeIcon style={{fontSize: '50px', paddingBottom: 50}} icon={faGithub}></FontAwesomeIcon></a>
-        <h1 style={{fontSize: '25px', paddingBottom: 50}}>My Github projects</h1>
+        <a href="https://github.com/D1noD3v" className='github-link'><FontAwesomeIcon style={{fontSize: '50px' }} icon={faGithub}></FontAwesomeIcon>
+        <h1 style={{fontSize: '25px'}} className='github-heading'>My Github projects</h1>
+        </a>
       </div>
       <Card className='project1' sx={{minWidth: 50}}>
         <CardContent className='cardcontent'>
-         <a href="https://github.com/D1noD3v/Bash-menu-manager">
-            <FontAwesomeIcon icon={faTerminal}>
+         <a href="https://github.com/D1noD3v/Bash-menu-manager" className='cardcontent-pro1-a'>
+            <FontAwesomeIcon icon={faLinux}>
             </FontAwesomeIcon>
             <h1 style={{fontFamily: 'var(--font-krona)'}}>Bash Menu Manager</h1>
           </a>
