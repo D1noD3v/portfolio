@@ -3,6 +3,7 @@ import terminal from '@/public/terminal.png';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -30,19 +31,16 @@ function About() {
       <p className='about'>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page to <br />
       show my projects and to share my skills to potential employers.
       </p>
+      <Analytics/>
     </>
   );
 }
 
 function GithubAbout(){
   return (
-    <>
       <div className='githubtitle'>
-        <FontAwesomeIcon style={{fontSize: '50px'}} icon={faGithub}><h1>My Github profile</h1></FontAwesomeIcon>
-        <h1>My Github profile</h1>
+        <FontAwesomeIcon style={{fontSize: '50px'}} icon={faGithub}></FontAwesomeIcon><h1>My Github profile</h1>
       </div>
-    
-    </>
   )
 }
 
