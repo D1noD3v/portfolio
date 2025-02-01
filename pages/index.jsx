@@ -38,9 +38,14 @@ function About() {
 
 function GithubAbout(){
   return (
+    <>
       <div className='githubtitle'>
         <FontAwesomeIcon style={{fontSize: '50px'}} icon={faGithub}></FontAwesomeIcon><h1>My Github profile</h1>
       </div>
+      <div className='projects'>
+        
+      </div>
+    </>
   )
 }
 
