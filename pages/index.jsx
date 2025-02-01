@@ -48,7 +48,7 @@ function GithubAbout(){
 export default function MyApp() {
     return (
       <div>
-        <title>Dino Norén</title>
+        <title>Dino's Portfolio</title>
         <Header/>
         <br />
         <About/>
