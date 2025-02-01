@@ -33,4 +33,4 @@ Main: the main branch, this is where the working website is getting it's code fr
 
 Dev: The dev branch or developement branch, is mainly for developing new features, adding new content to the site or changing something from the previous merge into the main branch.
 
-This is how i usually structure my projects so if something breaks in the code, it's in the dev branch where it won't take down the entire website. Also very helpful when running npm run build to see if the build is successful before merging with main.
+This is how i usually structure my projects so if something breaks in the code, it's in the dev branch where it won't take down the entire website. Also very helpful when running ```npm run build``` to see if the build is successful before merging with main.
