@@ -1,6 +1,8 @@
 import React from 'react';
 import terminal from '@/public/terminal.png';
 import Image from 'next/image';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -36,7 +38,8 @@ function GithubAbout(){
   return (
     <>
       <div className='githubtitle'>
-        <Image/>
+        <FontAwesomeIcon style={{fontSize: '50px'}} icon={faGithub}><h1>My Github profile</h1></FontAwesomeIcon>
+        <h1>My Github profile</h1>
       </div>
     
     </>
@@ -48,10 +51,11 @@ function GithubAbout(){
 export default function MyApp() {
     return (
       <div>
-        <title>Dino's Portfolio</title>
+        <title>Dinos Portfolio</title>
         <Header/>
         <br />
         <About/>
+        <GithubAbout/>
       </div>
     );
 }
