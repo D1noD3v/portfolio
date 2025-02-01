@@ -16,6 +16,8 @@
     font-style: normal;
 }
 
+
+
 :root {
     --font-DIN-Medium: 'DIN-Medium';
     --font-krona: 'KronaOne'
@@ -26,6 +28,11 @@ body {
     background-color: #383636;
     color: #ffffff;
     padding: 15px;
+}
+
+a:hover {
+    color: #578834; /* Change to your preferred color */
+    transition: color 0.3s ease;
 }
 
 .header {
@@ -49,4 +56,39 @@ body {
     font-size: 20px;
 }
 
+.githubtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
 
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    text-decoration: none;
+    color: inherit;
+  }
+
+.github-heading {
+    font-size: 25px; /* Adjust the text size as needed */
+    margin: 0; /* Remove default margin */
+  }
+
+.cardcontent-pro1-a {
+    display: flex;
+    align-items: center;
+    gap: 8px;          /* Spacing between the icon and text */
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+
+.cardcontent {
+    display: inline-block;
+    font-family: var(--font-DIN-Medium);
+    font-size: 20px;
+    text-decoration: none;
+}
