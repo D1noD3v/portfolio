@@ -2,9 +2,13 @@ import React from 'react';
 import terminal from '@/public/terminal.png';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinux } from "@fortawesome/free-brands-svg-icons";
 import { Analytics } from "@vercel/analytics/react"
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+
 
 
 
@@ -41,12 +45,21 @@ function GithubAbout(){
   return (
     <>
       <div className='githubtitle'>
-        <a href="https://github.com/D1noD3v"><FontAwesomeIcon style={{fontSize: '50px'}} icon={faGithub}></FontAwesomeIcon></a>
-        <h1 style={{fontSize: '25px'}}>My Github profile</h1>
+        <a href="https://github.com/D1noD3v"><FontAwesomeIcon style={{fontSize: '50px', paddingBottom: 50}} icon={faGithub}></FontAwesomeIcon></a>
+        <h1 style={{fontSize: '25px', paddingBottom: 50}}>My Github projects</h1>
       </div>
-      <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
-        somethign something
-      </Box>
+      <Card className='project1' sx={{minWidth: 50}}>
+        <CardContent className='cardcontent'>
+         <a href="https://github.com/D1noD3v/Bash-menu-manager">
+            <FontAwesomeIcon icon={faTerminal}>
+            </FontAwesomeIcon>
+            <h1 style={{fontFamily: 'var(--font-krona)'}}>Bash Menu Manager</h1>
+          </a>
+            <br />
+          <p>This project was an assignment in a university course about Linux. Some time after the assignment was done <br /> 
+              me and my partner in the project decided to publish it under the GPLv3 license and share it as open source software.</p>
+        </CardContent>
+      </Card>
     </>
   )
 }

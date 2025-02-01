@@ -16,6 +16,8 @@
     font-style: normal;
 }
 
+
+
 :root {
     --font-DIN-Medium: 'DIN-Medium';
     --font-krona: 'KronaOne'
@@ -56,4 +58,12 @@ body {
     justify-content: flex-end;
 }
 
+.cardcontent {
+    font-family: var(--font-DIN-Medium);
+    text-decoration: none;
+}
 
+.cardcontent a:hover {
+    color: #578834; /* Change to your preferred color */
+    transition: color 0.3s ease;
+}
