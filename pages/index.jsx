@@ -84,7 +84,7 @@ function GithubAbout(){
       <Card className='project' sx={{minWidth: 50}}>
         <CardActionArea>
         <CardContent className='cardcontent'>
-         <a href="https://github.com/D1noD3v/portfolio" className='cardcontent-a'>
+         <a href="https://github.com/D1noD3v/zagreus-server-config" className='cardcontent-a'>
             <FontAwesomeIcon icon={faServer}>
             </FontAwesomeIcon>
             <h1 style={{fontFamily: 'var(--font-krona)'}}>&apos;Zagreus&apos; Server Config</h1>
