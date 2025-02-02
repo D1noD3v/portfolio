@@ -2,12 +2,13 @@ import React from 'react';
 import terminal from '@/public/terminal.png';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTerminal } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinux } from "@fortawesome/free-brands-svg-icons";
+import { faTerminal, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinux, faJs } from "@fortawesome/free-brands-svg-icons";
 import { Analytics } from "@vercel/analytics/react"
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import CardActionArea from '@mui/material/CardActionArea';
 
 
 
@@ -36,7 +37,7 @@ function About() {
       <p className='about'>My name as seen above is Dino and this is my portfolio website. Meant to be a sort of landing page to <br />
       show my projects and to share my skills to potential employers.
       </p>
-      <Analytics/><Analytics/>
+      <Analytics/>
     </>
   );
 }
@@ -49,17 +50,50 @@ function GithubAbout(){
         <h1 style={{fontSize: '25px'}} className='github-heading'>My Github projects</h1>
         </a>
       </div>
-      <Card className='project1' sx={{minWidth: 50}}>
+      <Card className='project' sx={{minWidth: 50}}>
+        <CardActionArea>
         <CardContent className='cardcontent'>
-         <a href="https://github.com/D1noD3v/Bash-menu-manager" className='cardcontent-pro1-a'>
+         <a href="https://github.com/D1noD3v/Bash-menu-manager" className='cardcontent-a'>
             <FontAwesomeIcon icon={faLinux}>
             </FontAwesomeIcon>
             <h1 style={{fontFamily: 'var(--font-krona)'}}>Bash Menu Manager</h1>
           </a>
             <br />
-          <p>This project was an assignment in a university course about Linux. Some time after the assignment was done <br /> 
+          <p>This project was an assignment in a university course about Linux. Some time after the assignment was done
               me and my partner in the project decided to publish it under the GPLv3 license and share it as open source software.</p>
         </CardContent>
+        </CardActionArea>
+      </Card>
+      <br />
+      <Card className='project' sx={{minWidth: 50}}>
+        <CardActionArea>
+        <CardContent className='cardcontent'>
+         <a href="https://github.com/D1noD3v/portfolio" className='cardcontent-a'>
+            <FontAwesomeIcon icon={faJs}>
+            </FontAwesomeIcon>
+            <h1 style={{fontFamily: 'var(--font-krona)'}}>Portfolio</h1>
+          </a>
+            <br />
+          <p>This github repo is for this very website! Made with React, Tailwind CSS and next.js. If you want to use this website
+            for your own, you can fork it from the github link above, as its licensed under the MIT license.
+          </p>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+      <br />
+      <Card className='project' sx={{minWidth: 50}}>
+        <CardActionArea>
+        <CardContent className='cardcontent'>
+         <a href="https://github.com/D1noD3v/portfolio" className='cardcontent-a'>
+            <FontAwesomeIcon icon={faServer}>
+            </FontAwesomeIcon>
+            <h1 style={{fontFamily: 'var(--font-krona)'}}>&apos;Zagreus&apos; Server Config</h1>
+          </a>
+            <br />
+          <p>My home server configuration. 
+          </p>
+        </CardContent>
+        </CardActionArea>
       </Card>
     </>
   )

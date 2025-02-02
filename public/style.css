@@ -61,6 +61,7 @@ a:hover {
     align-items: center;
     gap: 10px;
     justify-content: flex-end;
+    padding: 25px;
 }
 
 .github-link {
@@ -69,21 +70,27 @@ a:hover {
     gap: 10px; 
     text-decoration: none;
     color: inherit;
-  }
+}
 
 .github-heading {
     font-size: 25px; /* Adjust the text size as needed */
     margin: 0; /* Remove default margin */
-  }
+}
 
-.cardcontent-pro1-a {
+.cardcontent-a {
     display: flex;
     align-items: center;
     gap: 8px;          /* Spacing between the icon and text */
     text-decoration: none;
     color: inherit;
-  }
+}
 
+.project {
+    display: flex;
+    margin-left: auto;
+    width: 50%;
+    justify-content: flex-end;
+}
 
 
 .cardcontent {
