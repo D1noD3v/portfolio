@@ -90,7 +90,7 @@ function GithubAbout(){
             <h1 style={{fontFamily: 'var(--font-krona)'}}>&apos;Zagreus&apos; Server Config</h1>
           </a>
             <br />
-          <p>My home server configuration. 
+          <p>My home server configuration. Contains all the docker compose files and docker run commands for the various apps/services i run.
           </p>
         </CardContent>
         </CardActionArea>
