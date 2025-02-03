@@ -40,11 +40,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
 
-## Branches
-This project uses multiple branches, the 2 Branches are:
-
-Main: the main branch, this is where the working website is getting it's code from. If a feature is working on the dev branch it will get merged into main.
-
-Dev: The dev branch or developement branch, is mainly for developing new features, adding new content to the site or changing something from the previous merge into the main branch.
-
-This is how i usually structure my projects so if something breaks in the code, it's in the dev branch where it won't take down the entire website. Also very helpful when running ```npm run build``` to see if the build is successful before merging with main.
