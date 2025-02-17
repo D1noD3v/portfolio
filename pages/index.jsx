@@ -99,17 +99,31 @@ function GithubAbout(){
   )
 }
 
+function Booter() {
+  return (
+    <>
+      <div className='booter'></div>
+      <div style={{
+          background: 'white',
+          height: 3,
+        }}></div>
+      <footer className='footer'>Made by Dino Brankovic, All rights reserved.</footer>
+    </>
+  );
+}
+
 
 // * main funktionen för websidan
 export default function MyApp() {
     return (
-      <div>
+      <>
         <title>Dinos Portfolio</title>
         <Header/>
         <br />
         <About/>
         <GithubAbout/>
-      </div>
+        <Booter/>
+      </>
     );
 }
 
