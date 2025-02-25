@@ -2,107 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'KronaOne';
-    src: url(/fonts/KronaOne-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Import JetBrains Mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
 
-@font-face {
-    font-family: DIN-Medium;
-    src: url('/fonts/DIN Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
+/* Font configuration */
 :root {
-    --font-DIN-Medium: 'DIN-Medium';
-    --font-krona: 'KronaOne'
+  --font-jetbrains: 'JetBrains Mono', monospace;
 }
 
-body {
-    font-family: var(--font-krona);
-    background-color: #383636;
-    color: #ffffff;
-    padding: 15px;
+/* Base styles */
+html, body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #171717;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, button, input, textarea {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Link styles */
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #578834; /* Change to your preferred color */
-    transition: color 0.3s ease;
+  color: #4ade80; /* Tailwind green-400 */
+  transition: color 0.3s ease;
 }
 
-.header {
-    padding: 0 20px;  
-    color: white;   
-    justify-content: space-between; 
-    align-items: center;
+/* Card styling */
+.card {
+  background-color: #27272a; /* Tailwind zinc-800 */
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
-.name-container {
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    display: block;
+/* Navigation styling */
+.nav-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
-.about {
-    margin-top: 20px;
-    margin-left: 10px;
-    font-family: var(--font-DIN-Medium);
-    font-size: 20px;
+.nav-text {
+  font-size: 0.75rem;
 }
 
-.githubtitle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-end;
-    padding: 25px;
+/* Utility classes */
+.text-green {
+  color: #4ade80; /* Tailwind green-400 */
 }
 
-.github-link {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    text-decoration: none;
-    color: inherit;
+/* Add smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
 }
 
-.github-heading {
-    font-size: 25px; /* Adjust the text size as needed */
-    margin: 0; /* Remove default margin */
+/* Ensure monospace font is used */
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
 }
 
-.cardcontent-a {
-    display: flex;
-    align-items: center;
-    gap: 8px;          /* Spacing between the icon and text */
-    text-decoration: none;
-    color: inherit;
+/* Custom cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-.project {
-    display: flex;
-    margin-left: auto;
-    width: 50%;
-    justify-content: flex-end;
+.cursor-blink {
+  animation: blink 1s step-end infinite;
 }
-
-
-.cardcontent {
-    display: inline-block;
-    font-family: var(--font-DIN-Medium);
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }

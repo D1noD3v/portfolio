@@ -8,14 +8,28 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['KronaOne']
+        sans: ['JetBrains Mono', 'monospace'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'card-flip': 'flip 0.5s ease-out',
+        'cursor-blink': 'blink 1s step-end infinite',
+      },
+      keyframes: {
+        flip: {
+          '0%': { transform: 'rotateY(90deg)' },
+          '100%': { transform: 'rotateY(0deg)' },
+        },
+        blink: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0 },
+        },
+      }
     },
   },
   plugins: [],
-  
 };
