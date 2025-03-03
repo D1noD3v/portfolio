@@ -1,26 +1,19 @@
 import React from 'react';
-import { Analytics } from "@vercel/analytics/react"
-import CardLayout from '@/components/MonospaceCardLayout';
-import HomePage from '@/components/HomePage';
-import AboutPage from '@/components/AboutPage';
-import ProjectsPage from '@/components/ProjectsPage';
-import ServerPage from '@/components/ServerPage';
-import ContactPage from '@/components/ContactPage';
+import Head from 'next/head';
+import Portfolio from '../components/Portfolio';
 
-export default function MyApp() {
+export default function Home() {
   return (
-    <div className="bg-zinc-900 min-h-screen font-mono">
-      <title>Dino&apos;s Portfolio</title>
-      
-      <CardLayout>
-        <HomePage id="home" />
-        <AboutPage id="about" />
-        <ProjectsPage id="projects" />
-        <ServerPage id="server" />
-        <ContactPage id="contact" />
-      </CardLayout>
-      
-      <Analytics/>
-    </div>
+    <>
+      <Head>
+        <title>Dino&apos;s Portfolio | Linux & Network Specialist</title>
+        <meta name="description" content="Dino's portfolio showcasing expertise in Linux, Python, JavaScript, Bash, networking and Cisco systems" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      </Head>
+      <Portfolio />
+    </>
   );
 }

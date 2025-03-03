@@ -2,80 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import JetBrains Mono font */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
 
-/* Font configuration */
 :root {
-  --font-jetbrains: 'JetBrains Mono', monospace;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 26, 32, 44;
+  --background-end-rgb: 17, 24, 39;
 }
 
-/* Base styles */
-html, body {
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    )
+    fixed;
   font-family: 'JetBrains Mono', monospace;
-  background-color: #171717;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  font-weight: 600;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, div, button, input, textarea {
-  font-family: 'JetBrains Mono', monospace;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-/* Link styles */
-a {
-  color: inherit;
-  text-decoration: none;
+::-webkit-scrollbar-track {
+  background: #1a202c;
 }
 
-a:hover {
-  color: #4ade80; /* Tailwind green-400 */
-  transition: color 0.3s ease;
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
 }
 
-/* Card styling */
-.card {
-  background-color: #27272a; /* Tailwind zinc-800 */
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-/* Navigation styling */
-.nav-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.25rem;
-}
-
-.nav-text {
-  font-size: 0.75rem;
-}
-
-/* Utility classes */
-.text-green {
-  color: #4ade80; /* Tailwind green-400 */
-}
-
-/* Add smooth scrolling for the whole page */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Ensure monospace font is used */
-.font-mono {
-  font-family: 'JetBrains Mono', monospace !important;
-}
-
-/* Custom cursor animation */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.cursor-blink {
-  animation: blink 1s step-end infinite;
+::-webkit-scrollbar-thumb:hover {
+  background: #48bb78;
 }

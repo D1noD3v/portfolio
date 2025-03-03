@@ -1,8 +1,7 @@
-import "@/public/style.css";
-import "@/public/terminal.png";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import '../public/style.css';
 
-
-export default function App({ Component, pageProps }) {
-    return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
+
+export default MyApp;
