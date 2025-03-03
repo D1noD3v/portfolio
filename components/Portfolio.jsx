@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -359,7 +360,7 @@ const Portfolio = () => {
               <code className="text-sm text-gray-300">
                 <span className="text-green-400">const</span> <span className="text-blue-300">moreProjects</span> = <span className="text-yellow-300">true</span>;<br />
                 <span className="text-green-400">if</span> (moreProjects) {'{'}<br />
-                &nbsp;&nbsp;<span className="text-blue-300">window.location</span> = <span className="text-yellow-300">"https://github.com/D1noD3v"</span>;<br />
+                &nbsp;&nbsp;<span className="text-blue-300">window.location</span> = <span className="text-yellow-300">&ldquo;https://github.com/D1noD3v&ldquo;</span>;<br />
                 {'}'}
               </code>
             </div>
@@ -442,7 +443,7 @@ const Portfolio = () => {
               <div className="mt-8 p-4 bg-gray-800 rounded-md border border-gray-700">
                 <div className="text-gray-400 mb-2">// Alternative ways to reach me</div>
                 <code className="text-sm text-gray-300">
-                  <span className="text-green-400">$</span> echo "Connect with me on LinkedIn or GitHub"<br />
+                  <span className="text-green-400">$</span> echo &ldquo;Connect with me on LinkedIn or GitHub&ldquo;<br />
                   <span className="text-green-400">$</span> _
                 </code>
               </div>
@@ -459,7 +460,7 @@ const Portfolio = () => {
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="https://github.com/D1noD3v" className="text-gray-400 hover:text-green-400 transition-colors">GitHub</a>
-            <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">LinkedIn</a>
+            <a href="https://linkedin.com/in/dinobra" className="text-gray-400 hover:text-green-400 transition-colors">LinkedIn</a>
           </div>
         </div>
       </footer>
