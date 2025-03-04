@@ -8,14 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['KronaOne']
-      },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'mono': ['"JetBrains Mono"', 'monospace'],
       },
     },
   },
   plugins: [],
-  
 };

@@ -2,100 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'KronaOne';
-    src: url(/fonts/KronaOne-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: DIN-Medium;
-    src: url('/fonts/DIN Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
 
 :root {
-    --font-DIN-Medium: 'DIN-Medium';
-    --font-krona: 'KronaOne'
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 26, 32, 44;
+  --background-end-rgb: 17, 24, 39;
 }
 
 body {
-    font-family: var(--font-krona);
-    background-color: #383636;
-    color: #ffffff;
-    padding: 15px;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    )
+    fixed;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
 }
 
-a:hover {
-    color: #578834; /* Change to your preferred color */
-    transition: color 0.3s ease;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.header {
-    padding: 0 20px;  
-    color: white;   
-    justify-content: space-between; 
-    align-items: center;
+::-webkit-scrollbar-track {
+  background: #1a202c;
 }
 
-.name-container {
-    flex: 1;
-    text-align: center;
-    align-items: center;
-    display: block;
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
 }
 
-.about {
-    margin-top: 20px;
-    margin-left: 10px;
-    font-family: var(--font-DIN-Medium);
-    font-size: 20px;
-}
-
-.githubtitle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-end;
-    padding: 25px;
-}
-
-.github-link {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    text-decoration: none;
-    color: inherit;
-}
-
-.github-heading {
-    font-size: 25px; /* Adjust the text size as needed */
-    margin: 0; /* Remove default margin */
-}
-
-.cardcontent-a {
-    display: flex;
-    align-items: center;
-    gap: 8px;          /* Spacing between the icon and text */
-    text-decoration: none;
-    color: inherit;
-}
-
-.project {
-    display: flex;
-    margin-left: auto;
-    width: 50%;
-    justify-content: flex-end;
-}
-
-
-.cardcontent {
-    display: inline-block;
-    font-family: var(--font-DIN-Medium);
-    font-size: 20px;
-    text-decoration: none;
+::-webkit-scrollbar-thumb:hover {
+  background: #48bb78;
 }
