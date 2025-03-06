@@ -16,7 +16,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^6.4.2",
+    "@types/node": "^22.13.9",
     "@vercel/analytics": "^1.4.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
     "framer-motion": "^11.18.2",
@@ -25,7 +27,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "resend": "^4.1.2",
-    "tailwind-merge": "^2.5.4"
+    "tailwind-merge": "^2.5.4",
+    "vite": "^6.2.0"
   },
   "devDependencies": {
     "eslint": "^8",
