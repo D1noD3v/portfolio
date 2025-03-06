@@ -260,7 +260,7 @@ const Portfolio = () => {
             <div className="mt-8 p-4 bg-gray-800 rounded-md border border-gray-700">
               <code className="text-sm text-gray-300">
                 <span className="text-green-400">$</span> whoami<br />
-                <span className="text-yellow-300">Linux Specialist | Network Engineer | Open Source Contributor</span><br />
+                <span className="text-yellow-300">Linux Specialist | FOSS Enthusiast | Open Source Contributor</span><br />
                 <span className="text-green-400">$</span> uptime<br />
                 <span className="text-yellow-300">Experienced with Linux systems and networking technologies</span><br />
                 <span className="text-green-400">$</span> location<br />
@@ -455,7 +455,7 @@ const Portfolio = () => {
       <footer className="py-6 px-4 md:px-16 lg:px-32 border-t border-gray-800 mt-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm">
-            &copy; Dino Brankovic. All rights reserved. • Licensed under the MIT License, unless other specifed. {new Date().getFullYear()}<br /> • Built with <a href="https://nextjs.org/" className="text-green-400 hover:text-green-400 transition-colors">Next.js</a> and <a href="https://tailwindcss.com/" className="text-blue-600 hover:text-green-400 transition-colors">Tailwind CSS</a>
+            &copy; Dino Brankovic. All rights reserved. • Licensed under the MIT License • {new Date().getFullYear()}<br /> • Built with <a href="https://nextjs.org/" className="text-slate-700 hover:text-green-400 transition-colors">Next.js</a> and <a href="https://tailwindcss.com/" className="text-blue-600 hover:text-green-400 transition-colors">Tailwind CSS</a>
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="https://github.com/D1noD3v" className="text-gray-400 hover:text-green-400 transition-colors">GitHub</a>
