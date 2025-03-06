@@ -8,15 +8,18 @@
 
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Portfolio Website
+A website to display my current projects and skills as a developer. Made with Next.js, React and TailwindCSS. Using a simple and minimalistic design.
+
+
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 Firstly, make sure you have the following packages installed:
 
-* Node.js v18.17 or later
-
-
+* Node.js latest
 
 After that, make sure to run 
 ```npm install```
@@ -39,5 +42,4 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
-
+You can start editing the page by modifying `components/Portfolio.jsx`. The page auto-updates as you edit the file. If you wish to add more to the site, create a new file in the `components` directory.
