@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       name: "Linux",
       icon: "🐧",
-      description: "Experienced with various distributions including Ubuntu, CentOS, and Arch Linux. Proficient in system administration, configuration, and troubleshooting."
+      description: "Experienced with various distributions including Debian, Ubuntu, and Fedora. Proficient in system administration, configuration, and troubleshooting. I also have experience setting up and maintaining web servers, database servers, and application servers on Linux environments."
     },
     {
       name: "Python",
@@ -34,11 +34,6 @@ const Portfolio = () => {
       name: "Bash",
       icon: "💻",
       description: "Proficient in Bash scripting for automation, system administration tasks, and creating efficient command-line utilities."
-    },
-    {
-      name: "Linux Servers",
-      icon: "🖥️",
-      description: "Experience setting up and maintaining web servers, database servers, and application servers on Linux environments."
     },
     {
       name: "Routing Protocols",
@@ -135,7 +130,7 @@ const Portfolio = () => {
         <div className="flex items-center justify-between">
           <div className="text-xl md:text-2xl text-green-500">
             <span className="font-semibold">~/</span>
-            <span className="text-blue-400">dino</span>
+            <span className="text-blue-400">dino<span className='text-green-500'>@</span>portfolio</span>
             <span className="text-green-500 animate-pulse">_</span>
           </div>
           <nav className="hidden md:block">
